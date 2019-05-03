@@ -1,0 +1,127 @@
+external interface Serializable {}
+
+class Logiciel {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 3887485940509265005L;
+}
+
+class Page {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -3523340721933293032L;
+}
+
+class PageDemarrage {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 3861723257256208552L;
+}
+
+class PageSeuil {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -6788787388902422853L;
+}
+
+class PageObjectifs {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 3152786299147224670L;
+}
+
+class PageActionnariat {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 6652539346702716200L;
+}
+
+class PageRessHumaines {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -2399829317633027947L;
+}
+
+class PageProduction {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 4876707435067970648L;
+}
+
+class PageMarketing {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -2268860326126973302L;
+}
+
+class PageJournalGeneral {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -319344666178541160L;
+}
+
+class PageTableauDeBord {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 8889407707014818719L;
+}
+
+class MyDate {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 561739762426758117L;
+}
+
+class EntrySeuil {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -7489107819899448859L;
+}
+
+class Shareholder {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -7190204507045093950L;
+}
+
+class Attendance {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -5263623779580794373L;
+}
+
+class EntryProdPurchase {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 1020724654357632792L;
+}
+
+class EntryMark {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 3832755202808620552L;
+}
+
+class EntryFinSale {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 7336179762384889373L;
+}
+
+class EntryFinCharges {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = 8495257076598014877L;
+}
+
+class EntryFinBank {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -5160891461626403586L;
+}
+
+class EntryFinOp {
+	depend java.io.Serializable;
+ 	isA Serializable;
+ 	private static final long serialVersionUID = -4791530482902023054L;
+}

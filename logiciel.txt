@@ -1,0 +1,51 @@
+<ghazal.jaq.log.model.Logiciel id="1">
+  <pages id="2">
+    <ghazal.jaq.log.model.PageDemarrage id="3">
+      <companyName></companyName>
+      <prod1></prod1>
+      <prod2></prod2>
+      <prod3></prod3>
+      <commRate>0.0</commRate>
+      <hrSalary>0.0</hrSalary>
+      <firstMeet id="4">
+        <day>0</day>
+        <month>0</month>
+        <year>0</year>
+      </firstMeet>
+      <meetups>0</meetups>
+    </ghazal.jaq.log.model.PageDemarrage>
+    <ghazal.jaq.log.model.PageSeuil id="5">
+      <fixedCosts id="6"/>
+      <varCosts id="7"/>
+      <salePrice>0</salePrice>
+    </ghazal.jaq.log.model.PageSeuil>
+    <ghazal.jaq.log.model.PageObjectifs id="8">
+      <objAttendance id="9"/>
+      <objProd id="10"/>
+      <objSales id="11"/>
+    </ghazal.jaq.log.model.PageObjectifs>
+    <ghazal.jaq.log.model.PageActionnariat id="12">
+      <entrepreneurs id="13"/>
+      <others id="14"/>
+    </ghazal.jaq.log.model.PageActionnariat>
+    <ghazal.jaq.log.model.PageRessHumaines id="15">
+      <attendanceData id="16"/>
+    </ghazal.jaq.log.model.PageRessHumaines>
+    <ghazal.jaq.log.model.PageProduction id="17">
+      <prodData id="18"/>
+      <prodPurEntries id="19"/>
+    </ghazal.jaq.log.model.PageProduction>
+    <ghazal.jaq.log.model.PageMarketing id="20">
+      <markEntries id="21"/>
+    </ghazal.jaq.log.model.PageMarketing>
+    <ghazal.jaq.log.model.PageJournalGeneral id="22">
+      <saleEntries id="23"/>
+      <chargesEntries id="24"/>
+      <bankEntries id="25"/>
+      <opEntries id="26"/>
+    </ghazal.jaq.log.model.PageJournalGeneral>
+    <ghazal.jaq.log.model.PageTableauDeBord id="27">
+      <meetupNum>1</meetupNum>
+    </ghazal.jaq.log.model.PageTableauDeBord>
+  </pages>
+</ghazal.jaq.log.model.Logiciel>

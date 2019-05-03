@@ -1,0 +1,109 @@
+namespace ghazal.jaq.log.model;
+
+use logPersistence.ump;
+use logHelperClasses.ump;
+
+class Logiciel {
+	1 -> * Page pages;
+
+	after constructor {
+		pages.add((Page)(new PageDemarrage()));
+		pages.add((Page)(new PageSeuil()));
+		pages.add((Page)(new PageObjectifs()));
+		pages.add((Page)(new PageActionnariat()));
+		pages.add((Page)(new PageRessHumaines()));
+		pages.add((Page)(new PageProduction()));
+		pages.add((Page)(new PageMarketing()));
+		pages.add((Page)(new PageJournalGeneral()));
+		pages.add((Page)(new PageTableauDeBord()));
+	}
+}
+
+class Page {
+}
+
+class PageDemarrage {
+
+	isA Page;
+
+	String companyName = "";
+	String prod1 = "";
+	String prod2 = "";
+	String prod3 = "";
+	lazy Double commRate;
+	lazy Double hrSalary;
+	lazy MyDate firstMeet;
+	lazy Integer meetups;
+
+	after constructor {
+		firstMeet = new MyDate(0, 0, 0);
+	}
+}
+
+class PageSeuil {
+	
+	isA Page;
+
+	EntryBasic[] fixedCosts;
+	EntryBasic[] varCosts;
+	lazy Integer salePrice;
+}
+
+class PageObjectifs {
+	
+	isA Page;	
+
+	Integer[] objAttendance;
+	Integer[] objProd;
+	Integer[] objSales;
+
+}
+
+class PageActionnariat {
+	
+	isA Page;
+
+	Shareholder[] entrepreneurs;
+	Shareholder[] others;
+
+}
+
+class PageRessHumaines {
+
+	isA Page;
+
+	Attendance[] attendanceData;
+	
+}
+
+class PageProduction {
+	
+	isA Page;
+
+	1 -> * EntryProdPurchase prodPurEntries;
+	Integer[] prodData;
+}
+
+class PageMarketing {
+	
+	isA Page;
+
+	1 -> * EntryMark markEntries;
+}
+
+class PageJournalGeneral {
+	
+	isA Page;
+
+	1 -> * EntryFinSale saleEntries;
+	1 -> * EntryFinCharges chargesEntries;
+	1 -> * EntryFinBank bankEntries;
+	1 -> * EntryFinOp opEntries;
+}
+
+class PageTableauDeBord {
+	
+	isA Page;
+
+	Integer meetupNum = 1;
+}

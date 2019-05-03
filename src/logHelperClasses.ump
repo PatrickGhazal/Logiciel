@@ -1,0 +1,118 @@
+class MyDate {
+	Integer day;
+	Integer month;
+	Integer year;
+
+	public String toString() {
+		return "" + day + "/" + month + "/" + year;
+	}
+}
+
+class EntryBasic {
+	Integer entryNum;
+	String name;
+	String value;
+
+	public EntryBasic() {
+	}
+
+	public String toString() {
+		return name + "     " + value;
+	}
+}
+
+class Shareholder {
+	Integer shareNum;
+	String lastName;
+	String firstName;
+	String address;
+	String city;
+	String postalCode;
+	String homePhone;
+	String cellPhone;
+	String email;
+	MyDate dob;
+
+	public Shareholder() {
+
+	}
+}
+
+class Attendance {
+	String name;
+	Integer[] attData;
+}
+
+class EntryProdPurchase {
+	Integer receiptNum;
+	Integer meetupNum;
+	MyDate date;
+	String description;
+	String provider;
+	Integer unitPrice;
+	Integer quantity;
+	Double tps;
+	Double tvq;
+
+	public EntryProdPurchase() {
+
+	}
+}
+
+class EntryMark {
+	String sellerName;
+	Integer weekNum;
+	Integer returned;
+	Integer sold;
+	Double cashReceived;
+	Integer distributed;
+
+	public EntryMark() {
+
+	}
+}
+
+class EntryFinSale {
+	Integer meetupNum;
+	Double saleRevenue;
+	Double saleTax;
+	String description;
+
+	public EntryFinSale() {
+
+	}
+}
+
+class EntryFinCharges {
+	Integer meetupNum;
+	Double amount;
+	Double tax;
+	String account;
+	String description;
+
+	public EntryFinCharges() {
+
+	}
+}
+
+class EntryFinBank {
+	Integer meetupNum;
+	Double amount;
+	boolean deposit;
+	Integer chequeNum;
+	String description;
+
+	public EntryFinBank() {
+
+	}
+}
+
+class EntryFinOp {
+	Integer meetupNum;
+	String opType;
+
+	public EntryFinOp() {
+
+	}
+
+}
